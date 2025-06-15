@@ -1,0 +1,362 @@
+.spectralabs-desktop {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100vh;
+  align-items: flex-start;
+  position: relative;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.spectralabs-desktop .looper-BG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spectralabs-desktop .element {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 0;
+  left: 0;
+}
+
+.spectralabs-desktop .brandname {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  top: 54px;
+  left: 150px;
+  z-index: 10;
+}
+
+.spectralabs-desktop .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Zen Dots", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.spectralabs-desktop .brandname-gradient {
+  position: absolute;
+  width: 503px;
+  height: 77px;
+  top: 262px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.spectralabs-desktop .div {
+  position: relative;
+  background: linear-gradient(
+    91deg,
+    rgba(255, 28, 247, 1) 0%,
+    rgba(0, 240, 255, 1) 100%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: "Zen Dots", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 64px;
+  letter-spacing: 1.28px;
+  line-height: normal;
+  width: 100%;
+}
+
+.spectralabs-desktop .secondary-title {
+  position: absolute;
+  width: 100%;
+  max-width: 419px;
+  height: auto;
+  top: 355px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.spectralabs-desktop .secondary-title-2 {
+  position: relative;
+  font-family: "Zen Dots", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0.72px;
+  line-height: normal;
+  white-space: normal;
+  width: 100%;
+  text-align: center;
+}
+
+.spectralabs-desktop .navbar {
+  position: absolute;
+  width: 312px;
+  height: auto;
+  top: 54px;
+  right: 80px;
+  z-index: 100;
+}
+
+.spectralabs-desktop .burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.spectralabs-desktop .bar1, .spectralabs-desktop .bar2, .spectralabs-desktop .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.spectralabs-desktop .menu-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spectralabs-desktop .nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+  margin: 0 10px;
+}
+
+.spectralabs-desktop .nav-link:hover {
+  color: #00f0ff;
+}
+
+.spectralabs-desktop .text-wrapper-2,
+.spectralabs-desktop .text-wrapper-3,
+.spectralabs-desktop .contact {
+  font-family: "Zen Dots", Helvetica;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .spectralabs-desktop .burger-menu {
+    display: block;
+  }
+
+  .spectralabs-desktop .menu-items {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 200px;
+    gap: 25px;
+  }
+
+  .spectralabs-desktop .menu-items.show {
+    display: flex;
+  }
+
+  .spectralabs-desktop .nav-link {
+    margin: 10px 0;
+  }
+}
+
+.spectralabs-desktop .socials {
+  position: absolute;
+  width: 213px;
+  height: 51px;
+  top: 464px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.spectralabs-desktop .social-link {
+  display: block;
+  width: 46px;
+  height: 49px;
+  transition: transform 0.3s ease;
+}
+
+.spectralabs-desktop .social-link:hover {
+  transform: scale(1.1);
+}
+
+.spectralabs-desktop .mdi-github,
+.spectralabs-desktop .mdi-twitter,
+.spectralabs-desktop .mdi-linkedin {
+  width: 46px;
+  height: 49px;
+}
+
+.spectralabs-desktop .social-icons {
+  width: 46px;
+  height: 48px;
+}
+
+.spectralabs-desktop .logo-png {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  position: absolute;
+  top: 35px;
+  left: 80px;
+  z-index: 10;
+}
+
+.spectralabs-desktop .image {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1200px) {
+  .spectralabs-desktop .div {
+    font-size: 50px;
+  }
+  
+  .spectralabs-desktop .secondary-title-2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .spectralabs-desktop .navbar {
+    width: 250px;
+  }
+  
+  .spectralabs-desktop .brandname-gradient {
+    width: 400px;
+  }
+  
+  .spectralabs-desktop .div {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .spectralabs-desktop .navbar {
+    width: auto;
+    top: 30px;
+    bottom: auto;
+    left: auto;
+    right: 30px;
+  }
+  
+  .spectralabs-desktop .brandname {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+  }
+  
+  .spectralabs-desktop .logo-png {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+  }
+  
+  .spectralabs-desktop .brandname-gradient {
+    top: 200px;
+    width: 90%;
+  }
+  
+  .spectralabs-desktop .div {
+    font-size: 36px;
+  }
+  
+  .spectralabs-desktop .secondary-title {
+    top: 280px;
+    width: 90%;
+  }
+  
+  .spectralabs-desktop .secondary-title-2 {
+    font-size: 24px;
+  }
+  
+  .spectralabs-desktop .socials {
+    top: 350px;
+  }
+
+  .spectralabs-desktop .burger-menu.change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .spectralabs-desktop .burger-menu.change .bar2 {
+    opacity: 0;
+  }
+
+  .spectralabs-desktop .burger-menu.change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .spectralabs-desktop .brandname-gradient {
+    top: 180px;
+  }
+  
+  .spectralabs-desktop .secondary-title {
+    top: 260px;
+  }
+  
+  .spectralabs-desktop .socials {
+    top: 330px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .spectralabs-desktop .div {
+    font-size: 28px;
+  }
+  
+  .spectralabs-desktop .secondary-title-2 {
+    font-size: 20px;
+  }
+  
+  .spectralabs-desktop .text-wrapper-2,
+  .spectralabs-desktop .text-wrapper-3,
+  .spectralabs-desktop .contact {
+    font-size: 16px;
+  }
+  
+  .spectralabs-desktop .nav-link {
+    margin: 0 5px;
+  }
+  
+  .spectralabs-desktop .social-link {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .spectralabs-desktop .mdi-github,
+  .spectralabs-desktop .mdi-twitter,
+  .spectralabs-desktop .mdi-linkedin,
+  .spectralabs-desktop .social-icons {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .spectralabs-desktop .socials {
+    width: 180px;
+  }
+}

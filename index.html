@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="spectralabs-desktop" data-model-id="2:2">
+      <img class="looper-BG" src="res/looper-bg.svg" />
+      <div class="element"></div>
+      <div class="brandname"><div class="text-wrapper">spectralabs</div></div>
+      <div class="brandname-gradient"><div class="div">Spectralabs</div></div>
+      <div class="secondary-title"><div class="secondary-title-2">security research</div></div>
+      <div class="navbar">
+        <div class="burger-menu">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="menu-items">
+          <a href="#projects" class="nav-link"><div class="text-wrapper-2">projects</div></a>
+          <a href="#blog" class="nav-link"><div class="text-wrapper-3">blog</div></a>
+          <a href="#contact" class="nav-link"><div class="contact">contact</div></a>
+        </div>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/spectralabsro" target="_blank" rel="noopener noreferrer" class="social-link">
+          <img class="mdi-github" src="res/mdi-github.svg" alt="GitHub" />
+        </a>
+        <a href="https://x.com/spectralabsro" target="_blank" rel="noopener noreferrer" class="social-link">
+          <div class="mdi-twitter">
+            <img class="social-icons" src="res/mdi-twitter.svg" alt="Twitter" />
+          </div>
+        </a>
+        <a href="https://linkedin.com/TODO" target="_blank" rel="noopener noreferrer" class="social-link">
+          <div class="mdi-linkedin">
+            <img class="social-icons" src="res/mdi-linkedin.svg" alt="LinkedIn" />
+          </div>
+        </a>
+      </div>
+      <div class="logo-png"><img class="image" src="res/logo.png" /></div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const burgerMenu = document.querySelector('.burger-menu');
+      const menuItems = document.querySelector('.menu-items');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      burgerMenu.addEventListener('click', () => {
+        menuItems.classList.toggle('show');
+        burgerMenu.classList.toggle('change');
+      });
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          menuItems.classList.remove('show');
+          burgerMenu.classList.remove('change');
+        });
+      });
+    });
+  </script>
+</html>
