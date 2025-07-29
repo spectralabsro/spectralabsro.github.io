@@ -37,6 +37,17 @@
   z-index: 10;
 }
 
+/*.spectralabs-desktop .brand-wrapper {*/
+/*  display: inline-flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  gap: 10px;*/
+/*  position: absolute;*/
+/*  top: 54px;*/
+/*  left: 150px;*/
+/*  z-index: 10;*/
+/*}*/
+
 .spectralabs-desktop .text-wrapper {
   position: relative;
   width: fit-content;
@@ -217,15 +228,15 @@
   gap: 5px;
   padding: 5px;
   position: absolute;
-  top: 35px;
-  left: 80px;
+  top: 40px;
+  left: 95px;
   z-index: 10;
 }
 
 .spectralabs-desktop .image {
   position: relative;
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   object-fit: cover;
 }
 
